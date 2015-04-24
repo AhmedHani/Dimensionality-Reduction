@@ -5,3 +5,11 @@ c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\
 c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.csproj.GenerateResource.Cache
 c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.exe
 c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.pdb
+G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\bin\Debug\FeaturesReduction.exe.config
+G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.exe
+G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.pdb
+G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\bin\Debug\FeaturesReduction.exe
+G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\bin\Debug\FeaturesReduction.pdb
+G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.csprojResolveAssemblyReference.cache
+G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.Properties.Resources.resources
+G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.csproj.GenerateResource.Cache

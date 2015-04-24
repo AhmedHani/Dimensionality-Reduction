@@ -44,6 +44,11 @@ namespace FeaturesReduction
             get { return this.output; }
         }
 
+        /// <summary>
+        /// Training the PCA network for the given epochs and training samples to get the input features
+        /// </summary>
+        /// <param name="epochs">Number of iterations</param>
+        /// <param name="trainingSamples">Training Data that holds each sample features</param>
         public void train(int epochs, List<List<double>> trainingSamples)
         {
             bool stop = false;
@@ -74,6 +79,11 @@ namespace FeaturesReduction
             }
         }
 
+        /// <summary>
+        /// Given the features, the function calculate the resulted features of network
+        /// </summary>
+        /// <param name="features">Training sample data</param>
+        /// <returns></returns>
         public List<double> featuresReduction(List<double> features)
         {
             List<double> output = new List<double>();
@@ -94,6 +104,12 @@ namespace FeaturesReduction
             return output;
         }
 
+        /// <summary>
+        /// Update the network weights, the weights values could be increased and decreased
+        /// The formula = ETA * (y(x - sum(oldweights * yk))
+        /// http://en.wikipedia.org/wiki/Generalized_Hebbian_Algorithm
+        /// </summary>
+        /// <param name="features">Training sample data</param>
         public void update(List<double> features)
         {
             for (int i = 0; i < this.weights.Count; i++)
@@ -107,6 +123,12 @@ namespace FeaturesReduction
             }
         }
 
+        /// <summary>
+        /// The summation formula
+        /// </summary>
+        /// <param name="outputIndex">output neuron index</param>
+        /// <param name="inputIndex">input index</param>
+        /// <returns></returns>
         private double computeOutput(int outputIndex, int inputIndex)
         {
             double sum = 0.0;
@@ -119,6 +141,12 @@ namespace FeaturesReduction
             return sum;
         }
 
+        /// <summary>
+        /// Checking of the the new and old weights have the same values
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="second"></param>
+        /// <returns></returns>
         private bool sameWeights(List<List<double>> first, List<List<double>> second)
         {
             for (int i = 0; i < first.Count; i++)
