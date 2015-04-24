@@ -1,0 +1,7 @@
+c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\FeaturesReduction\bin\Debug\FeaturesReduction.exe.config
+c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\FeaturesReduction\bin\Debug\FeaturesReduction.exe
+c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\FeaturesReduction\bin\Debug\FeaturesReduction.pdb
+c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.Properties.Resources.resources
+c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.csproj.GenerateResource.Cache
+c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.exe
+c:\users\eng.ahmed hani\documents\visual studio 2012\Projects\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.pdb
