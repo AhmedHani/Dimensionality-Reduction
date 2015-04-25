@@ -39,11 +39,6 @@ namespace FeaturesReduction
             get { return this.weights; }
         }
 
-        public List<double> Output
-        {
-            get { return this.output; }
-        }
-
         /// <summary>
         /// Training the PCA network for the given epochs and training samples to get the input features
         /// </summary>
@@ -64,7 +59,7 @@ namespace FeaturesReduction
                         oldWeights.Add(new List<double>(this.weights[i]));
                     }
 
-                    this.output = this.featuresReduction(trainingSamples[i]);
+                    this.output = this.featuresReduction(trainingSamples[i]); // for tracing
                     this.update(trainingSamples[i]);
 
                     if (this.sameWeights(this.weights, this.oldWeights))
@@ -97,7 +92,7 @@ namespace FeaturesReduction
             {
                 for (int j = 0; j < features.Count; j++)
                 {
-                    output[j] += features[j] * this.weights[i][j];
+                    output[i] += features[j] * this.weights[i][j];
                 }
             }
 
