@@ -13,3 +13,4 @@ G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\bi
 G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.csprojResolveAssemblyReference.cache
 G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.Properties.Resources.resources
 G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.csproj.GenerateResource.Cache
+G:\Github Repositories\Features-Reduction\FeaturesReduction\FeaturesReduction\obj\Debug\FeaturesReduction.Main.resources

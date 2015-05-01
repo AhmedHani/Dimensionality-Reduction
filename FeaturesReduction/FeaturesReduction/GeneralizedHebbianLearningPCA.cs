@@ -12,7 +12,6 @@ namespace FeaturesReduction
         private List<double> output;
         private int numberOfReducedFeatures;
         private List<List<double>> weights;
-        private List<List<double>> oldWeights;
         private double learningRate;
 
         public GeneralizedHebbianLearningPCA(List<double> input, int numberOfReducedFeatures, double learningRate)
@@ -46,31 +45,13 @@ namespace FeaturesReduction
         /// <param name="trainingSamples">Training Data that holds each sample features</param>
         public void train(int epochs, List<List<double>> trainingSamples)
         {
-            bool stop = false;
-
             for (int it = 0; it < epochs; it++)
             {
                 for (int i = 0; i < trainingSamples.Count ; i++)
                 {
-                    oldWeights = new List<List<double>>();
-
-                    for (int j = 0; j < this.weights.Count; j++)
-                    {
-                        oldWeights.Add(new List<double>(this.weights[i]));
-                    }
-
                     this.output = this.featuresReduction(trainingSamples[i]); // for tracing
                     this.update(trainingSamples[i]);
-
-                    if (this.sameWeights(this.weights, this.oldWeights))
-                    {
-                        stop = true;
-                        break;
-                    } 
                 }
-
-                if (stop) break;
-
             }
         }
 
@@ -130,30 +111,10 @@ namespace FeaturesReduction
 
             for (int i = 0; i < outputIndex; i++)
             {
-                sum += this.output[i] * this.oldWeights[i][inputIndex];
+                sum += this.output[i] * this.weights[i][inputIndex];
             }
 
             return sum;
-        }
-
-        /// <summary>
-        /// Checking of the the new and old weights have the same values
-        /// </summary>
-        /// <param name="first"></param>
-        /// <param name="second"></param>
-        /// <returns></returns>
-        private bool sameWeights(List<List<double>> first, List<List<double>> second)
-        {
-            for (int i = 0; i < first.Count; i++)
-            {
-                for (int j = 0; j < first[i].Count; j++)
-                {
-                    if (first[i][j] != second[i][j])
-                        return false;
-                }
-            }
-
-            return true;
         }
 
         private void initWeights()
